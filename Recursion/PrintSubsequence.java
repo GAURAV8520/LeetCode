@@ -78,3 +78,43 @@ public class Main
 		printSubsequenceOfSum3(0,ls,0,arr);
 	}
 }
+
+
+//count the subsequences 
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+
+import java.util.*;
+public class Main
+{
+    public static int countSubsequenceOfSum3(int index,int sum,int arr[]){
+        if(index==arr.length){
+            if(sum==3){
+                return 1; //condition satisfied
+            }
+            return 0; //condition not satisfied
+            
+        }
+        
+        
+        sum+=arr[index];
+        int l=printSubsequenceOfSum3(index+1,sum,arr);
+       
+        sum-=arr[index];
+        int r=printSubsequenceOfSum3(index+1,sum,arr);
+        
+        return l+r;
+        
+    }
+	public static void main(String[] args) {
+		int arr[]={1,2,1};
+		
+		System.out.println(printSubsequenceOfSum3(0,0,arr));
+	}
+}
