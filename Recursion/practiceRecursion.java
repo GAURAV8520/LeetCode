@@ -42,6 +42,16 @@ public class Main
         }
         return findFirstuppercaseletterinString(index+1,str);
     }
+	public static int specialFibonaci(int a,int b,int index){
+        if(index==0){
+            return a;
+        }
+        if(index==1){
+            return b;
+        }
+        
+        return specialFibonaci(a,b,index-1)^specialFibonaci(a,b,index-2);
+    }
     
 	public static void main(String[] Targs) {
 	    int arr[]={1, 2, 3, 4, 5,10,-5};
