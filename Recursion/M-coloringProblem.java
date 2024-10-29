@@ -31,6 +31,27 @@ public class Main {
 
 
 class Solution {
+
+
+    /*
+f(node){
+    if(node==N){
+        return true;
+    }
+    
+    for(int i=1;i<m;i++){
+        if(possible){
+            color[node]=i;
+            if(f(node+1)==true){
+                return true;
+            }
+            color[node]=0;
+        }
+    }
+    
+    
+    return false;
+}*/
     
     // Check if it's safe to color the node with a specific color
     private static boolean isSafe(int node, List<Integer>[] G, int color[], int currentColor) {
