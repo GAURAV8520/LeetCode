@@ -134,3 +134,11 @@ public class Main
 		System.out.println(ans3);
 	}
 }
+
+
+// third pattern 
+// No of subarray where condtionn 
+
+//fourth pattern 
+//shortest or mininmum window condition
+
